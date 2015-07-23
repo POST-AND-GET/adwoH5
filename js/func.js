@@ -61,9 +61,7 @@ function p2(){
 
     },500)
 }
-function p3(){
 
-}
 function p4(){
-
+    $('.title4').style.left = '15px';
 }

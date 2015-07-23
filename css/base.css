@@ -22,7 +22,7 @@ body{width: 320px;overflow: hidden;font-family: "microsoft yahei";}
 .flag{bottom: 263px;left: 154px;width: 72px;height: 64px;background-size: 72px 64px;-webkit-transform: rotate(-15deg);-webkit-animation: flagAnimation .4s infinite;-webkit-animation-direction:alternate;/*-webkit-transition: */z-index: 1;}
 .flag1{bottom: 105px;left: 185px;width: 72px;height: 64px;background-size: 72px 64px;-webkit-animation: flagAnimation .4s infinite;-webkit-animation-direction:alternate;}
 .people{width: 130px;bottom: 0;left: 94px;}
-.title{width: 297px;left: -310px;top:40px;-webkit-transition: left 1s ease;}
+.title{width: 297px;left: -410px;top:40px;-webkit-transition: left 1s ease;}
 .logo{width: 192px;left: 60px;top:40px;-webkit-transition: opacity 2.5s ease;}
 .mark{bottom: 20px;left: 0;right: 0;margin: auto;width: 10px;z-index: 2}
 /*animation*/
@@ -47,3 +47,24 @@ body{width: 320px;overflow: hidden;font-family: "microsoft yahei";}
 .people1{bottom: 15px;left: -150px;width: 120px;z-index: 1}
 .title12{top: 70px;left: -500px;width: 278px;z-index: 1}
 .title1{top: 150px;left: 127px;width: 143px;height: 127px;z-index: 2;opacity: 0;-webkit-transition: all 1.5s ease;}
+.bg3{left: 0;top:0;width: 320px;}
+.imgbg3{left: 0;top:0;width: 320px;height: 524px;background: #0a91e5;overflow-y: auto;overflow-x: hidden}
+.yuan{bottom:-132px;left: 126px;width: 30px;-webkit-animation: yuanAnimation 0.5s infinite;-webkit-animation-direction:alternate;}
+@-webkit-keyframes yuanAnimation {
+0%{-webkit-transform: scale(0.9,0.9);}
+100%{-webkit-transform: scale(1.2,1.2);}
+
+}
+.bg4{left: 0;top: 0;width: 320px}
+.people4{width: 320px;height: 305px;left:0;top:150px;right: 0;margin: auto;background: url(../images/people41.png) center no-repeat,url(../images/line2.png) no-repeat;z-index: 1;background-size: 266px 246px,320px 305px; -webkit-animation: people4Animation 0.5s infinite;}
+@-webkit-keyframes people4Animation {
+    0%{top:150px;background: url(../images/people41.png) center no-repeat,url(../images/line2.png) center no-repeat;z-index: 1;background-size: 266px 246px,360px 305px;}
+    50%{top:150px;background: url(../images/people41.png) center no-repeat,url(../images/line2.png) center no-repeat;z-index: 1;background-size: 266px 246px,360px 305px;}
+    50%{top:155px;background: url(../images/people42.png) center no-repeat,url(../images/line2.png) center no-repeat;z-index: 1;background-size: 266px 246px,360px 305px;}
+    100%{top:155px;background: url(../images/people42.png) center no-repeat,url(../images/line2.png) center no-repeat;z-index: 1;background-size: 266px 246px,360px 305px;}
+}
+.title4{left: -315px;top: 40px;width: 285px;-webkit-transition: left 1.5s ease;}
+.p5 .slider{width: 240px;height: 150px;left: 0;right: 0;top: 240px;margin: auto}
+.p5 .slider div{width: 230px;background: #ffffff;padding: 10px}
+.p5 .slider div img{display: block;width: 230px;margin: 0 auto}
+.bg5{width: 320px;left: 0;top:0;}
