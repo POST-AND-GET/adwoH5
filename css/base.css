@@ -22,15 +22,15 @@ body{width: 320px;overflow: hidden;font-family: "microsoft yahei";}
 .flag{bottom: 263px;left: 154px;width: 72px;height: 64px;background-size: 72px 64px;-webkit-transform: rotate(-15deg);-webkit-animation: flagAnimation .4s infinite;-webkit-animation-direction:alternate;/*-webkit-transition: */z-index: 1;}
 .flag1{bottom: 105px;left: 185px;width: 72px;height: 64px;background-size: 72px 64px;-webkit-animation: flagAnimation .4s infinite;-webkit-animation-direction:alternate;}
 .people{width: 130px;bottom: 0;left: 94px;}
-.title{width: 297px;left: -297px;top:40px;-webkit-transition: left 1s ease;}
+.title{width: 297px;left: -310px;top:40px;-webkit-transition: left 1s ease;}
 .logo{width: 192px;left: 60px;top:40px;-webkit-transition: opacity 2.5s ease;}
 .mark{bottom: 20px;left: 0;right: 0;margin: auto;width: 10px;z-index: 2}
 /*animation*/
 @-webkit-keyframes flagAnimation {
-    0%{background:url(../images/flag.png) no-repeat ;background-size: 72px 64px;}
-    50%{background:url(../images/flag.png) no-repeat ;background-size: 72px 64px;}
-    51%{background:url(../images/flag1.png) no-repeat;background-size: 72px 64px;}
-    100%{background:url(../images/flag1.png) no-repeat;background-size: 72px 64px;}
+    0%{width: 72px;height: 64px;background:url(../images/flag.png) no-repeat;background-size: 72px 64px;}
+    50%{width: 72px;height: 64px;background:url(../images/flag.png) no-repeat ;background-size: 72px 64px;}
+    51%{width: 72px;height: 64px;background:url(../images/flag1.png) no-repeat;background-size: 72px 64px;}
+    100%{width: 72px;height: 64px;background:url(../images/flag1.png) no-repeat;background-size: 72px 64px;}
 }
 /*p2*/
 .table{bottom:40px;left: 0;right: 0;margin: auto;width: 297px}
@@ -44,6 +44,6 @@ body{width: 320px;overflow: hidden;font-family: "microsoft yahei";}
 .pp2{top: 135px;left: -250px;width: 256px}
 .pp3{top: 70px;left: -250px;width: 256px}
 .pp4{top: 5px;left: -250px;width: 256px}
-.people1{bottom: 5px;left: -150px;width: 120px;z-index: 1}
+.people1{bottom: 15px;left: -150px;width: 120px;z-index: 1}
 .title12{top: 70px;left: -500px;width: 278px;z-index: 1}
 .title1{top: 150px;left: 127px;width: 143px;height: 127px;z-index: 2;opacity: 0;-webkit-transition: all 1.5s ease;}

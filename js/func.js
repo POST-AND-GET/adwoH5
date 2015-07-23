@@ -52,7 +52,7 @@ function p2(){
                         $('.title12').style.left = '30px';
                         setTimeout(function(){
                             $('.title1').style.opacity = '1'
-                        },1000);
+                        },1200);
                     },800)
                 },600)
             },500)
