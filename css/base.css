@@ -1,0 +1,49 @@
+* {margin: 0;padding: 0;}
+a {color: #000;text-decoration: none;cursor: pointer;outline: none;}
+a:hover {text-decoration: none;color: #000;}
+img {border: none;}
+input{border: none;}
+button{border: none;}
+ol,ul,li {;list-style: none;}
+/*******************/
+img{display: block}
+.pr{position: relative}
+.pa{position: absolute}
+.none{display: none}
+.opacity{opacity: 0}
+body{width: 320px;overflow: hidden;font-family: "microsoft yahei";}
+
+.swiper-container{width: 320px;height: 524px;overflow: hidden;background: #0a91e5}
+.swiper-container .swiper-slide{width: 320px;height: 524px;overflow: hidden;}
+.index-bottom-1{bottom: 0;left: 0;width: 320px}
+#earthw{height: 524px;width: 320px;left: 0;top: 0;-webkit-transition: top 1s ease;}
+#peoplew{height: 524px;width: 320px;left: 0;top: 0;-webkit-transition: top 1s ease;z-index: 0;}
+.earth{bottom: 0;left: 0;width: 320px;z-index: 2;}
+.flag{bottom: 263px;left: 154px;width: 72px;height: 64px;background-size: 72px 64px;-webkit-transform: rotate(-15deg);-webkit-animation: flagAnimation .4s infinite;-webkit-animation-direction:alternate;/*-webkit-transition: */z-index: 1;}
+.flag1{bottom: 105px;left: 185px;width: 72px;height: 64px;background-size: 72px 64px;-webkit-animation: flagAnimation .4s infinite;-webkit-animation-direction:alternate;}
+.people{width: 130px;bottom: 0;left: 94px;}
+.title{width: 297px;left: -297px;top:40px;-webkit-transition: left 1s ease;}
+.logo{width: 192px;left: 60px;top:40px;-webkit-transition: opacity 2.5s ease;}
+.mark{bottom: 20px;left: 0;right: 0;margin: auto;width: 10px;z-index: 2}
+/*animation*/
+@-webkit-keyframes flagAnimation {
+    0%{background:url(../images/flag.png) no-repeat ;background-size: 72px 64px;}
+    50%{background:url(../images/flag.png) no-repeat ;background-size: 72px 64px;}
+    51%{background:url(../images/flag1.png) no-repeat;background-size: 72px 64px;}
+    100%{background:url(../images/flag1.png) no-repeat;background-size: 72px 64px;}
+}
+/*p2*/
+.table{bottom:40px;left: 0;right: 0;margin: auto;width: 297px}
+.s1{bottom: 35px;right: -110px;width: 106px;-webkit-transition: right 1s ease;z-index: 1}
+.s2{bottom: 156px;right: -120px;width: 119px;-webkit-transition: right 1s ease;z-index: 1}
+.s3{bottom: 156px;left: -120px;width: 119px;-webkit-transition: left 1s ease;z-index: 1}
+.ppw,.ppww{width: 320px;height: 260px;left: 0;top: 0;;overflow: hidden}
+.ppw{-webkit-transition: top 2s ease;}
+.pp1,.pp2,.pp3,.pp4,.people1,.title12{-webkit-transition: left 1s ease;}
+.pp1{top: 200px;left: -250px;width: 256px}
+.pp2{top: 135px;left: -250px;width: 256px}
+.pp3{top: 70px;left: -250px;width: 256px}
+.pp4{top: 5px;left: -250px;width: 256px}
+.people1{bottom: 5px;left: -150px;width: 120px;z-index: 1}
+.title12{top: 70px;left: -500px;width: 278px;z-index: 1}
+.title1{top: 150px;left: 127px;width: 143px;height: 127px;z-index: 2;opacity: 0;-webkit-transition: all 1.5s ease;}
