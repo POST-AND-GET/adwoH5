@@ -13,7 +13,6 @@ var mySwiper = new Swiper('.swiper-container', {
     updateOnImagesReady : true,
     onInit: function(swiper) {
             p1();
-
     },
     onSlideChangeStart: function(swiper){
         if(swiper.activeIndex===1){
@@ -25,46 +24,21 @@ var mySwiper = new Swiper('.swiper-container', {
             //alert(2)
             $('.imgbg3').addEventListener('touchstart',function(e){
                 e.stopPropagation();
-
-
-
             })
             $('.imgbg3').addEventListener('touchmove',function(e){
                 e.stopPropagation();
-
-
             })
             $('.imgbg3').addEventListener('touchend',function(e){
                 e.stopPropagation();
-
-                $('.imgbg3').onscroll=function(){
-                   /* var a = document.querySelector('.imgbg3').scrollTop==0? document.body.clientHeight : document.querySelector('.imgbg3').clientHeight;
-                    var b = document.querySelector('.imgbg3').scrollTop==0? document.body.scrollTop : document.querySelector('.imgbg3').scrollTop;
-                    var c = document.querySelector('.imgbg3').scrollTop==0? document.body.scrollHeight : document.querySelector('.imgbg3').scrollHeight;
-//alert(1)
-                    if(a+b==c){
-                        mySwiper.slideTo(3);
-                    }*/
-
-                }
-
-                //alert(document.querySelector('.imgbg3').scrollTop)
-
-
-
-
-
             })
             $('.bg3').addEventListener('touchend',function(e){
                 if($('.imgbg3').scrollTop>190){
-
+                    e.preventDefault();
                     mySwiper.slideTo(3);
-
                 }
                 if(document.querySelector('.imgbg3').scrollTop==0){
-
+                    e.preventDefault();
                     mySwiper.slideTo(1);
-
                 }
             })
 
@@ -104,7 +78,7 @@ var oPosition=[
 
 
 $('.slider').addEventListener('touchstart',function(e){
-    e.stopPropagation();
+    e.preventDefault();
     var touch = e.touches[0];
     statY = touch.pageY;
 
@@ -116,7 +90,7 @@ $('.slider').addEventListener('touchmove',function(e){
 
 })
 $('.slider').addEventListener('touchend',function(e){
-    e.stopPropagation();
+    e.preventDefault();
     console.log(Yc)
 
     if(Yc<-40){N++;}
