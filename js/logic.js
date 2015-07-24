@@ -10,7 +10,9 @@ var N=0;
 
 var mySwiper = new Swiper('.swiper-container', {
     direction : 'vertical',
+    updateOnImagesReady : true,
     onInit: function(swiper) {
+
             p1();
 
     },
