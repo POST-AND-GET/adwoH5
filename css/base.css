@@ -56,12 +56,12 @@ body{width: 320px;overflow: hidden;font-family: "microsoft yahei";}
 
 }
 .bg4{left: 0;top: 0;width: 320px}
-.people4{width: 320px;height: 305px;left:0;top:150px;right: 0;margin: auto;background: url(../images/people41.png) center no-repeat,url(../images/line2.png) no-repeat;z-index: 1;background-size: 266px 246px,320px 305px; -webkit-animation: people4Animation 0.5s infinite;}
+.people4{width: 320px;height: 305px;left:0;top:150px;right: 0;margin: auto;background: url(../images/people41.png) center no-repeat,url(../images/line2.png) no-repeat;z-index: 1;background-size: 266px 246px,320px 305px; -webkit-animation: people4Animation 0.9s infinite;}
 @-webkit-keyframes people4Animation {
     0%{top:150px;background: url(../images/people41.png) center no-repeat,url(../images/line2.png) center no-repeat;z-index: 1;background-size: 266px 246px,360px 305px;}
     50%{top:150px;background: url(../images/people41.png) center no-repeat,url(../images/line2.png) center no-repeat;z-index: 1;background-size: 266px 246px,360px 305px;}
-    50%{top:155px;background: url(../images/people42.png) center no-repeat,url(../images/line2.png) center no-repeat;z-index: 1;background-size: 266px 246px,360px 305px;}
-    100%{top:155px;background: url(../images/people42.png) center no-repeat,url(../images/line2.png) center no-repeat;z-index: 1;background-size: 266px 246px,360px 305px;}
+    51%{top:159px;background: url(../images/people42.png) center no-repeat,url(../images/line2.png) center no-repeat;z-index: 1;background-size: 266px 246px,360px 305px;}
+    100%{top:159px;background: url(../images/people42.png) center no-repeat,url(../images/line2.png) center no-repeat;z-index: 1;background-size: 266px 246px,360px 305px;}
 }
 .title4{left: -315px;top: 40px;width: 285px;-webkit-transition: left 1.5s ease;}
 .p5 .slider{width: 240px;height: 150px;left: 0;right: 0;top: 250px;margin: auto}

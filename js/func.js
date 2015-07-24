@@ -65,3 +65,10 @@ function p2(){
 function p4(){
     $('.title4').style.left = '15px';
 }
+function nowUrl(){
+    var a = window.location.href;
+    var b = a.split('//')[1].split('/');
+    var c = b.length-1;
+    var d = b[c];
+    return a.replace(d,'');
+}

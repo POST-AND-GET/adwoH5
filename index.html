@@ -14,9 +14,12 @@
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="blue"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <link rel="stylesheet" href="css/base.css?a=24">
+    <link rel="stylesheet" href="css/base.css?a=26">
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
     <script src="js/swiper3.0.8.min.js"></script>
     <script src="js/func.js"></script>
+    <script src="js/sha.js"></script>
+    <script src="js/check.js"></script>
     <title>安沃搬家咯！Come on ！Let’s party！</title>
 </head>
 <body>
@@ -86,5 +89,52 @@
         </div>
     </div>
 </body>
-<script src="js/logic.js?v=18"></script>
+<script>
+    var _u=nowUrl();
+    var _uuuu=_u+'index.html';
+    var _imgUrl=_u+'images/180X180.png';
+    var obj = sign(localStorage.getItem("ticket"), window.location.href);
+    wx.config({
+        debug: false,
+        appId: 'wx866a50062b092ff6',
+        timestamp: obj.timestamp,
+        nonceStr: obj.nonceStr,
+        signature: obj.signature,
+        jsApiList: [
+            'onMenuShareTimeline',
+            'onMenuShareAppMessage'
+        ]
+    });
+
+    wx.ready(function () {
+        var imgUrl = _imgUrl;
+        var shareTitle = "安沃搬家咯!Come on !Let’s party!";
+        var descContent = "新家地址：北京市朝阳区光熙门北里甲28号";
+        var lineLink = _uuuu;
+        runfun(function () {
+            wx.onMenuShareAppMessage({
+                title: shareTitle, // 分享标题
+                desc: descContent, // 分享描述
+                link: lineLink, // 分享链接
+                imgUrl: imgUrl, // 分享图标
+                success: function () { },
+                cancel: function () { }
+            });
+        })
+        runfun(function () {
+            wx.onMenuShareTimeline({
+                title: shareTitle, // 分享标题
+                link: lineLink, // 分享链接
+                imgUrl: imgUrl, // 分享图标
+                success: function () { },
+                cancel: function () { }
+            });
+        });
+        wx.error(function (res) {
+            runajax();
+        });
+    });
+
+</script>
+<script src="js/logic.js?v=22"></script>
 </html>
