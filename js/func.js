@@ -14,7 +14,7 @@ function p1(){
 
         $('#earthw').style.top = '140px';
         $('#peoplew').style.opacity = '1';
-        $('#peoplew').style.top = '-120px';
+        $('#peoplew').style.top = '-125px';
         setTimeout(function(){
             $('#flag').style.opacity = '0';
             setTimeout(function(){
@@ -25,8 +25,11 @@ function p1(){
     },1000);
     setTimeout(function(){
         $('#title').style.left = '14px';
-        $('#earthw').style.top = '300px';
+        $('#earthw').style.top = '212px';
         $('#peoplew').style.top = '-50px';
+        setTimeout(function(){
+            $('#earthw').style.display = 'none';
+        },900)
         setTimeout(function(){
             $('#earthw').style.webkitTransition ='none';
             $('#peoplew').style.webkitTransition ='none';
