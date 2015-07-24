@@ -64,7 +64,7 @@ body{width: 320px;overflow: hidden;font-family: "microsoft yahei";}
     100%{top:155px;background: url(../images/people42.png) center no-repeat,url(../images/line2.png) center no-repeat;z-index: 1;background-size: 266px 246px,360px 305px;}
 }
 .title4{left: -315px;top: 40px;width: 285px;-webkit-transition: left 1.5s ease;}
-.p5 .slider{width: 240px;height: 150px;left: 0;right: 0;top: 240px;margin: auto}
+.p5 .slider{width: 240px;height: 150px;left: 0;right: 0;top: 250px;margin: auto}
 .p5 .slider div{width: 230px;background: #ffffff;padding: 10px}
 .p5 .slider div img{display: block;width: 230px;margin: 0 auto}
 .bg5{width: 320px;left: 0;top:0;}
