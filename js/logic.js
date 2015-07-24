@@ -12,7 +12,6 @@ var mySwiper = new Swiper('.swiper-container', {
     direction : 'vertical',
     updateOnImagesReady : true,
     onInit: function(swiper) {
-
             p1();
 
     },
@@ -111,11 +110,13 @@ $('.slider').addEventListener('touchstart',function(e){
 
 })
 $('.slider').addEventListener('touchmove',function(e){
+    e.stopPropagation();
     var touch = e.touches[0];
     Yc = touch.pageY-statY;
 
 })
 $('.slider').addEventListener('touchend',function(e){
+    e.stopPropagation();
     console.log(Yc)
 
     if(Yc<-40){N++;}
